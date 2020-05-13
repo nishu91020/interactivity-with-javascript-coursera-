@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<script>
+        var name=prompt("enter your name")
+        if( name.length!=0){
+            document.write("hello "+name)
+        }
+        </script>-->
+    <script>
+        var a=[1,2,,,3,,,4,5]
+        var sum=0;
+        var k=0;
+        for(j=0;j<a.length;j++)
+        {   if(a[j]!=undefined)
+             {sum+=a[j]
+             k++}
+        }
+        if(a.length!=0)
+        {document.write(sum/k)}
+        else
+        {
+            document.write("not defined")
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.getElementById('output').innerHTML=msg+"event";
+        function message(x){
+            alert(x);
+        }
+        function displayDate()
+        {
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+    <style>
+        div{
+            cursor: pointer;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="message('LOAD')" onresize="message('RESIZE')">
+   <div onclick="message('hi')">click here</div>
+   <p id="output"></p>
+   <p id="demo">this is a paragraph</p>
+<button type="button"
+    onclick="displayDate()">Display date</button>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .closed{
+  display:none;
+}
+.open
+{
+  display:block;
+}
+#demo{
+  
+  padding:1%;
+  margin:5%;
+  background-color: grey;
+}
+  
+    </style>
+    
+</head>
+<body>
+    <button type="button" onclick="openme()">open</button>
+    <button type="button"  onclick="closeme()">close</button>
+    <p  id="demo">hurray!congratulations for the promotion</p>
+    <script>
+    function closeme(){
+        // Find the element
+             x=document.getElementById("demo");
+         //Option 1: Change the style attribute directly
+             x.style.display="none";
+    
+        //Option 2: Change the class
+              // x.className="closed";
+      }
+  
+  function openme(){
+        // Find the element
+             x=document.getElementById("demo");
+        //Option 1: Change the style attribute directly
+              x.style.display="block";
+        
+        //Option 2: Change the class
+              // x.className="open";
+      }
+    </script>
+    <!--<h1>Events</h1>
+    <button onclick="document.getElementById('stuff').innerHTML='first button clicked';">First</button>
+    <button onclick="document.getElementById('stuff').innerHTML='second button clicked';">second</button>
+    <div id="stuff">This will change</div>-->
+</body>
+</html>

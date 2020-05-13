@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function comp()
+        {
+            e1=document.getElementById("email");
+            e2=document.getElementById("re-email");
+            if(e1.value!=e2.value)
+            {
+                alert("the email id does not match please enter again");
+                return flase;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form>
+        <!--<label for="name" >Fname</label>
+        <input type="name" id="name" name="name"  pattern="[a-zA-Z]+"><br>
+        <label for="name">Lname</label>
+        <input type="name" id="name" name="name"  pattern="[a-zA-Z]+"><br>-->
+        <label>email<input id="email" type="email" name="email" required></label><br>
+        <label>re-enter email<input id="re-email" type="re-email" name="re-email" required onchange="comp()"></label><br>
+        <!--<label>DOB<input type="date" id="birth" name="birth"></label><br>
+        <label>gender<br><input type="radio" id="gender" name="gender">male<br><input type="radio" id="gender" name="gender">female</label><br>
+        <label>checkbox<br><input type="checkbox" id="box" name="box">one<br><input type="checkbox" id="box" name="box">two</label><br>
+        <label>range<input type="range" id="r" name="r" max="100" min="0"></label><br>
+        <label>color<input type="color" id="c" name="c"></label><br>
+        <label>url<input type="url" id="u" name="u"></label><br>
+        <label>number<input type="number" id="num" name="num" [0-9]{5}></label><br>
+        <label>password<input type="password" id="p" name="p" required></label><br>
+        <label>re-enter password<input type="password" id="p" name="p" required></label><br>
+        <label>Zip-code with pattern<input type="number" id="p" name="p" pattern="[0-9]{5}" required></label><br>
+        <label>Zip-code with pattern<input type="number" id="p" name="p" min=00000 max=99999 required></label><br>-->
+        <button onclick="return comp();">Submit</button>
+    </form>
+    </form>
+</body>
+</html>

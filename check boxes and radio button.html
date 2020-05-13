@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function nickfun()
+        {
+            if(document.getElementById('yestick').checked)
+            {document.getElementById('nick').style.display="inline";
+            document.getElementById('nickname').setAttribute('required',true);}
+            else
+            {document.getElementById('nick').style.display="none";
+            document.getElementById('nickname').removeAttribute('required');
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <label>Fname:<input type="text" name="Fname"></label><br>
+        <label>Lname:<input type="text" name="Lname"></label><br>
+        <label>Nickname?:<input type="checkbox" name="yestick" id="yestick" value="yes" onchange="nickfun()"></label><br>
+        <div id="nick" >
+            <label>Nickname:<input type="text" name="nickname" id="nickname" ></label><br>
+        </div>
+    <!--<label>Gender<br>
+    <input type="radio" name="gender" value="female">Female<br/>
+    <input type="radio" name="gender" value="male">Male<br/></label>
+    Fav. Food<br><label><input type="checkbox" name="food" value="pasta">pasta<br></label>
+        <label><input type="checkbox" name="food" value="pizza">pizza<br></label><label><input type="checkbox" name="food" value="noodles">noodles<br></label>
+        <label><input type="checkbox" name="food" value="garlic bread">garlic bread<br></label><label><input type="checkbox" name="food" value="burger">burger<br></label>
+        <label><input type="checkbox" name="food" value="french fries">french fries<br></label><label><input type="checkbox" name="food" value="cake">cake<br></label>-->
+    <input type="submit" value="verify">
+    </fieldset>
+    </form>
+</body>
+</html>
